@@ -596,7 +596,7 @@
         loop: true,
         centeredSlides: true,
         autoplay: {
-            delay: 3000,
+            delay: 1500,
         },
         centeredSlides: true,
         pagination: {
