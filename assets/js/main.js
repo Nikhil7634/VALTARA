@@ -292,19 +292,19 @@
         scrNav();
     });
 
-    function scrNav() {
-        var sTop = $(window).scrollTop();
-        $('section').each(function() {
-            var id = $(this).attr('id'),
-                offset = $(this).offset().top-1,
-                height = $(this).height();
-            if(sTop >= offset && sTop < offset + height) {
-                link.parent().removeClass('active');
-                $('.main-menu').find('[href="#' + id + '"]').parent().addClass('active');
-            }
-        });
-    }
-    scrNav();
+    // function scrNav() {
+    //     var sTop = $(window).scrollTop();
+    //     $('section').each(function() {
+    //         var id = $(this).attr('id'),
+    //             offset = $(this).offset().top-1,
+    //             height = $(this).height();
+    //         if(sTop >= offset && sTop < offset + height) {
+    //             link.parent().removeClass('active');
+    //             $('.main-menu').find('[href="#' + id + '"]').parent().addClass('active');
+    //         }
+    //     });
+    // }
+    // scrNav();
 
     /*======================================
 	Smoth animatio Js
