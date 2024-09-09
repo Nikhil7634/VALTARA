@@ -15930,3 +15930,9 @@ a.ui-button:active {
 .footer__area-common-2{
   padding-top: 80px;
 }
+
+@media(max-width: 500px){
+  .about-us-3.section-space-bottom-220{
+    padding-bottom: 20px;
+  }
+}
