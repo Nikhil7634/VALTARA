@@ -15943,6 +15943,10 @@ a.ui-button:active {
   .talk-us__media .img-fluid{
     display: none;
   }
+
+  .mytitle{
+    transform: scale(1.3);
+  }
 }
 
 

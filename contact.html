@@ -219,6 +219,7 @@
                       <li><a href="./service.html">Services</a></li>
                     
                       <li><a href="./courses.html">Courses</a></li>
+                      <li><a href="./ourprojects.html">Demo</a></li>
                     </ul>
                   </nav>
                 </div>
@@ -298,7 +299,7 @@
                         </div>
                     </div>
 
-                    <div class="contact-us__form">
+                    <form class="contact-us__form" id="valtaraform">
                         <div class="row wow fadeInLeft animated" data-wow-delay=".9s">
                             <div class="col-sm-6">
                                 <div class="contact-us__input">
@@ -326,10 +327,10 @@
                                 </div>
                             </div>
                             <div class="col-12">
-                                <button class="rs-btn">Send Message</button>
+                                <button class="rs-btn" type="submit">Send Message</button>
                             </div>
                         </div>
-                    </div>
+                    </form>
                 </div>
                 <div class="col-xl-4">
                     <div class="contact-us__widget mb-30 wow fadeInRight animated" data-wow-delay=".3s">
@@ -505,6 +506,7 @@
     </section>
   </footer>
 <!-- Footer area end -->
+ 
 
 <!-- JS here -->
 <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
@@ -522,6 +524,38 @@
 <script src="assets/js/vendor/ajax-form.js"></script>
 <script src="assets/js/plugins/jquery.carouselTicker.js"></script>
 <script src="assets/js/main.js"></script>
+
+
+<script>
+  document
+    .getElementById("valtaraform")
+    .addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      // Get form data
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+      const number = document.getElementById("phone").value;
+      const subject = document.getElementById("subject").value;
+      const Message = document.getElementById("textarea").value;
+       
+      const phoneNumber = "8451876343";
+
+      // Construct the WhatsApp URL
+
+      const whatsappURL = "https://wa.me/" + phoneNumber + "?text="
+      + "*Name:* " + name + "%0a"
+      + "*Email:* " + email + "%0a"
+      + "*Phone Number:* " + number + "%0a"
+      + "*Subject:* " + subject + "%0a"
+      + "*Message* " +  Message + "%0a"
+       
+
+
+      // Open WhatsApp with the pre-filled message
+      window.open(whatsappURL, "_blank");
+    });
+</script>
 </body>
 
 
