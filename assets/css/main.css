@@ -6110,6 +6110,7 @@ a.ui-button:active {
   .banner-3__content h1 {
     font-size: 32px;
     line-height: 44px;
+    text-align: center;
   }
 }
 .banner-3__content h1 span {
@@ -13274,7 +13275,7 @@ a.ui-button:active {
 @media only screen and (min-width: 576px) and (max-width: 767px),
   (max-width: 575px) {
   .about-us-3.section-space-bottom-220 {
-    padding-bottom: 170px;
+    padding-bottom: 40px;
   }
 }
 .about-us-3__media {
@@ -15931,8 +15932,15 @@ a.ui-button:active {
   padding-top: 80px;
 }
 
-@media(max-width: 500px){
-  .about-us-3.section-space-bottom-220{
-    padding-bottom: 20px;
+@media(max-width: 575px){
+  .mcenter{
+    display: flex;
+    justify-content: center !important;
+    align-items: center;
+    text-align: center !important;
+    width: 100%;
+  }
+  .talk-us__media .img-fluid{
+    display: none;
   }
 }
