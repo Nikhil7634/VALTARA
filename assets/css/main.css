@@ -15944,3 +15944,15 @@ a.ui-button:active {
     display: none;
   }
 }
+
+
+.whatslink{
+  position: fixed;
+  bottom: 4%;
+  left: 5%;
+  z-index: 1000;
+}
+.whatslink img{
+  height: 50px;
+  border-radius: 50%;
+}
